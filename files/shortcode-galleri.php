@@ -15,7 +15,7 @@ if( $images ):
     echo '<ul class="hc-galleri hc-grid-con ' . get_field('hc_gal_grid') . '">';
          foreach( $images as $image ):
             echo '<li class="hc-grid-item">';
-                echo '<a href="' . $image['url'] . '">';
+                echo '<a href="' . $image['url'] . '" data-lightbox="xx">';
                   echo wp_get_attachment_image( $image['ID'], $size );
                 echo '</a>';
                 if ( $image['caption'] ){
