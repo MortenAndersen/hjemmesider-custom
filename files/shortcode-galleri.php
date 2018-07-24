@@ -1,5 +1,5 @@
 <?php
-// Accordion
+// Billedgalleri
 
 add_shortcode('billedgalleri', 'hjemmesider_custom_galleri');
 function hjemmesider_custom_galleri($atts) {
@@ -9,13 +9,14 @@ function hjemmesider_custom_galleri($atts) {
 $images = get_field('hc_billedgalleri');
 
 // Image size
-$size = 'medium'; // (thumbnail, medium, large, full or custom size)
+$size = get_field('hc_thumbnail_size'); // (thumbnail, medium, large, full or custom size)
+
 
 if( $images ):
     echo '<ul class="hc-galleri hc-grid-con ' . get_field('hc_gal_grid') . '">';
          foreach( $images as $image ):
             echo '<li class="hc-grid-item">';
-                echo '<a href="' . $image['url'] . '" data-lightbox="xx">';
+                echo '<a href="' . $image['url'] . '" data-lightbox="Gallery" data-title="' . $image['caption'] . '">';
                   echo wp_get_attachment_image( $image['ID'], $size );
                 echo '</a>';
                 if ( $image['caption'] ){
