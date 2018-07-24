@@ -1,4 +1,13 @@
-
+.hc-box-con {}
+.hc-box-item {
+	background: rgba(0, 0, 0, .1);
+	 margin: 1em 0;
+    padding: 2em;
+    list-style-type: none;
+    text-align: left;
+    overflow: hidden;
+    width: 100%;
+}
 p.hc-image-caption {
 	margin: .5em 0;
 	font-style: italic;

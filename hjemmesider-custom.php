@@ -48,6 +48,10 @@ require_once ('files/shortcode-tabs.php');
 require_once ('files/acf-filer-fields.php');
 require_once ('files/shortcode-filer.php');
 
+// BILLEDGALLERI
+require_once ('files/acf-galleri-fields.php');
+require_once ('files/shortcode-galleri.php');
+
 // WP LOOP
 require_once ('files/shortcode-wp-loop.php');
 
