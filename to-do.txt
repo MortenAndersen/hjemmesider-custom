@@ -1,0 +1,4 @@
+* README github
+* gitignore
+* sass compiler -> plugin-min.css
+* js compiler -> plugin-min.js
