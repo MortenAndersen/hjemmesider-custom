@@ -1,0 +1,46 @@
+    .hc-tabs {
+        padding: 1em;
+        margin: 0 auto;
+        background: #fff;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 0px 0px 1px inset;
+    }
+
+    .hc-tabs section {
+        display: none;
+        padding: 20px 0 0;
+        border-top: 1px solid #ddd;
+    }
+
+    .hc-tabs input {
+        display: none;
+    }
+
+    .hc-tabs label {
+        display: block;
+        border-bottom: 1px solid;
+        padding: .5em 0;
+    }
+
+    @media (min-width: 700px) {
+        .hc-tabs {
+            padding: 2em;
+        }
+        .hc-tabs label {
+            display: inline-block;
+            margin: 0 0 -1px;
+            padding: 15px 25px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid transparent;
+        }
+        .hc-tabs .hc-tabs label:hover {
+            cursor: pointer;
+        }
+
+        .hc-tabs input:checked+label {
+            color: #555;
+            border: 1px solid #ddd;
+            border-top: 2px solid;
+            border-bottom: 1px solid #fff;
+        }
+    }

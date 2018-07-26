@@ -9,7 +9,7 @@ function hjemmesider_custom_galleri($atts) {
 $images = get_field('hc_billedgalleri');
 
 // Image size
-$size = get_field('hc_thumbnail_size'); // (thumbnail, medium, large, full or custom size)
+$size = get_field('hc_thumbnail_size'); // (thumbnail, medium, large, full)
 
 
 if( $images ):

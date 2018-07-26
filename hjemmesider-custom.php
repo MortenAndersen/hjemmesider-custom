@@ -12,34 +12,19 @@ Author URI: https://www.hjemmesider.dk.dk
 
 add_action('wp_enqueue_scripts', 'hjemmesider_custom_register_plugin_styles', 15);
 function hjemmesider_custom_register_plugin_styles() {
-    wp_register_style('hc-grid', plugins_url('hjemmesider-custom/css/hc-default.css'));
-    wp_enqueue_style('hc-grid');
-
-    wp_register_style('hc-box', plugins_url('hjemmesider-custom/css/hc-box.css'));
-    wp_enqueue_style('hc-box');
-
-    wp_register_style('hc-tab', plugins_url('hjemmesider-custom/css/hc-tab.css'));
-    wp_enqueue_style('hc-tab');
-
-    wp_register_style('hc-lightbox', plugins_url('hjemmesider-custom/css/hc-lightbox.css'));
-    wp_enqueue_style('hc-lightbox');
+    wp_register_style('hc-style', plugins_url('hjemmesider-custom/css/style.min.css'));
+    wp_enqueue_style('hc-style');
 }
 
 // Script filer
 
+
 function hc_scripts() {
-    // BX Slider
-	wp_register_script('hc_script_bx_slider', plugins_url() . '/hjemmesider-custom/js/jquery.bxslider.min.js', array('jquery'));
-    wp_enqueue_script('hc_script_bx_slider');
-    // Lightbox
-    wp_register_script('hc_script_bx_lightbox', plugins_url() . '/hjemmesider-custom/js/lightbox.js', array('jquery'));
-    wp_enqueue_script('hc_script_bx_lightbox');
-    // Plugin js
-    wp_register_script('hc_script', plugins_url() . '/hjemmesider-custom/js/hc-script.js', array('jquery', 'jquery-ui-accordion'),'',true);
+
+    wp_register_script('hc_script', plugins_url() . '/hjemmesider-custom/js/min/plugin.min.js', array('jquery', 'jquery-ui-accordion'),'',true);
     wp_enqueue_script('hc_script');
 }
 add_action('wp_enqueue_scripts', 'hc_scripts');
-
 
 
 // BOX

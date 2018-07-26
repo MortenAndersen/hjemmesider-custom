@@ -1,0 +1,5 @@
+node_modules
+.sass-cache
+*.css.map
+hjemmesider-custopm.sublime-project
+hjemmesider-custopm.sublime-workspace

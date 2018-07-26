@@ -1,46 +1,58 @@
-*, *:before, *:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html, body {
-  height: 100vh;
+html,
+body {
+    height: 100vh;
 }
+
 .db {
     display: block;
 }
+
 .hc-list {
     margin: 1em 0;
     padding: 0;
 }
+
 .hc-list li {
     margin: .5em 0;
     padding: 0;
     list-style-type: none;
     overflow: hidden;
 }
+
 .hc-wp-loop li {
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     padding-bottom: 1em;
     margin-bottom: 1em;
 }
+
 .hc-wp-loop li:last-child {
     border: none;
     padding-bottom: 0;
 }
+
 .hc-loop-content {
     width: 65%;
     float: right;
 }
+
 .hc-loop-img {
     width: 35%;
     float: left;
     padding-right: 2em;
 }
+
 .hc-small-font {
     font-size: .75em;
 }
+
 .hc-grid-con {
     margin: 0;
     padding: 0;
@@ -76,11 +88,11 @@ html, body {
 
     .hc-grid-con.grid-4 .hc-grid-item {
         flex: 1 25%;
-        max-width: calc(25% - (6em / 4 ));
+        max-width: calc(25% - (6em / 4));
         margin-left: 2em;
     }
     .hc-grid-con.grid-4 .hc-grid-item:nth-child(4n+1) {
-    	margin-left: 0;
+        margin-left: 0;
     }
 
     .hc-grid-con.grid-5 .hc-grid-item {
@@ -97,6 +109,7 @@ html, body {
     background: rgba(0, 0, 0, .1);
     padding: 1em 2em;
 }
+
 
 
 
@@ -158,6 +171,7 @@ html, body {
 
 
 
+
 /* Interaction Cues
 ----------------------------------*/
 
@@ -165,6 +179,7 @@ html, body {
     cursor: default !important;
     pointer-events: none;
 }
+
 
 
 
@@ -186,6 +201,7 @@ html, body {
     margin-left: -8px;
     display: block;
 }
+
 
 
 /* Misc visuals
