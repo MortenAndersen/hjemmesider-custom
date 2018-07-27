@@ -4,7 +4,7 @@
     $(document).ready(function() {
 
 // BOX
-        $('.hc-fader').bxSlider({
+        $('.hc-fader, .gal-banner').bxSlider({
             auto: true,
             mode : 'fade',
             pager : false,

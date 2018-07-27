@@ -24,6 +24,7 @@ acf_add_local_field_group(array(
 				'grid-3' => '3',
 				'grid-4' => '4',
 				'grid-5' => '5',
+				'gal-banner' => 'Banner',
 			),
 			'allow_null' => 0,
 			'other_choice' => 0,

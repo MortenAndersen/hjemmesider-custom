@@ -15,14 +15,28 @@ $size = get_field('hc_thumbnail_size'); // (thumbnail, medium, large, full)
 if( $images ):
     echo '<ul class="hc-galleri hc-grid-con ' . get_field('hc_gal_grid') . '">';
          foreach( $images as $image ):
+
+          if( get_field('hc_gal_grid') != 'gal-banner' ){
+
             echo '<li class="hc-grid-item">';
                 echo '<a href="' . $image['url'] . '" data-lightbox="Gallery" data-title="' . $image['caption'] . '">';
                   echo wp_get_attachment_image( $image['ID'], $size );
                 echo '</a>';
                 if ( $image['caption'] ){
                 echo '<div class="hc-img-caption hc-small-font">' . $image['caption'] . '</div>';
-            };
+                };
             echo '</li>';
+
+          } else {
+            echo '<li class="hc-grid-item">';
+                  echo wp_get_attachment_image( $image['ID'], 'full' );
+                  if ( $image['caption'] ){
+                  echo '<div class="hc-banner-txt hc-small-font">' . $image['caption'] . '</div>';
+                  };
+            echo '</li>';
+
+          }
+
          endforeach;
     echo '</ul>';
  endif;
