@@ -6,7 +6,7 @@ grunt.initConfig({
   uglify: {
     my_target: {
       files: {
-        'js/min/plugin.min.js': ['js/lightbox.js', 'js/bxslider.js', 'js/hc-scripts.js']
+        'js/min/plugin.min.js': ['js/lightbox.js', 'js/bxslider.js', 'js/hc-script.js']
       }
     }
   },

@@ -8,22 +8,20 @@ Author: Hjemmesider.dk
 Author URI: https://www.hjemmesider.dk.dk
 */
 
-// CSS filer
-
 add_action('wp_enqueue_scripts', 'hjemmesider_custom_register_plugin_styles', 15);
+
+// CSS filer
 function hjemmesider_custom_register_plugin_styles() {
     wp_register_style('hc-style', plugins_url('hjemmesider-custom/css/style.min.css'));
     wp_enqueue_style('hc-style');
 }
 
 // Script filer
-
-
 function hc_scripts() {
-
     wp_register_script('hc_script', plugins_url() . '/hjemmesider-custom/js/min/plugin.min.js', array('jquery', 'jquery-ui-accordion'),'',true);
     wp_enqueue_script('hc_script');
 }
+
 add_action('wp_enqueue_scripts', 'hc_scripts');
 
 
