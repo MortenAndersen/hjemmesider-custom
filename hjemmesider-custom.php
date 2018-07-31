@@ -48,6 +48,10 @@ require_once ('files/shortcode-galleri.php');
 // WP LOOP
 require_once ('files/shortcode-wp-loop.php');
 
+// PERSON
+require_once ('files/acf-person-fields.php');
+require_once ('files/shortcode-person.php');
+
 // EVENTS
 // require_once ('files/shortcode-event.php');
-// require_once ('files/posttype.php');
+require_once ('files/posttype.php');

@@ -8,6 +8,7 @@ function hjemmesider_custom_tabs($atts) {
 
 if( have_rows('hc_tab_item') ):
 
+echo '<div class="hc-tabs">';
 
 $my_fields = get_field_object('hc_tab_item');
 	$count = (count($my_fields['value']));
@@ -30,7 +31,6 @@ $counter = 1;
 $first_time = 0;
 
 
-echo '<div class="hc-tabs">';
 
  	// loop through the rows of data
     while ( have_rows('hc_tab_item') ) : the_row();

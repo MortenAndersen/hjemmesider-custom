@@ -65,6 +65,11 @@ body {
     list-style-type: none;
 }
 
+.hc-grid-con.grid-1 .hc-grid-item {
+    flex: 1 100%;
+    max-width: 100%;
+}
+
 @media (min-width: 700px) {
     .hc-grid-con.grid-2 .hc-grid-item {
         flex: 1 50%;

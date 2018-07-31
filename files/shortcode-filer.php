@@ -6,18 +6,20 @@ function hjemmesider_custom_filer($atts) {
     global $post;
     ob_start();
 
+    extract(shortcode_atts(array('grid' => 'grid-1'), $atts));
+
 if( have_rows('hc_filer_item') ):
 
 
-echo '<ul class="hc-filer hc-list">';
+echo '<div class="hc-filer hc-grid-con ' . $grid . '">';
 
  	// loop through the rows of data
     while ( have_rows('hc_filer_item') ) : the_row();
-    	echo '<li class="file-' . get_row_index() . '">';
+    	echo '<div class="hc-grid-item file-' . get_row_index() . '">';
     	echo '<a href="' . get_sub_field('hc_fil') . '" target="_blank">' . get_sub_field('hc_filnavn') . '</a>';
-    	echo '</li>';
+    	echo '</div>';
     endwhile;
-echo '</ul>';
+echo '</div>';
 echo "\n";
 else :
 

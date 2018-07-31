@@ -6,12 +6,15 @@ function hjemmeisder_custom_box($atts) {
     global $post;
     ob_start();
 
+    // define attributes and their defaults
+    extract(shortcode_atts(array('grid' => 'grid-2'), $atts));
+
 // var
     $box_type = get_field('hc_slider');
 
 if( have_rows('box') ):
 
-if( $box_type == 'none' ) { echo '<div class="hc-box-con hc-grid-con ' . get_field('grid') . '">'; };
+if( $box_type == 'none' ) { echo '<div class="hc-box-con hc-grid-con ' . $grid . '">'; };
 if( $box_type == 'fader' ) { echo '<div class="hc-box-con hc-grid-con hc-fader">'; };
 
 echo "\n";

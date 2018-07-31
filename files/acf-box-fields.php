@@ -6,33 +6,6 @@ acf_add_local_field_group(array(
 	'title' => 'BOX hc',
 	'fields' => array(
 		array(
-			'key' => 'field_5b30c92faef2f',
-			'label' => 'Grid',
-			'name' => 'grid',
-			'type' => 'radio',
-			'instructions' => '',
-			'required' => 1,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'choices' => array(
-				'grid-1' => '1',
-				'grid-2' => '2',
-				'grid-3' => '3',
-				'grid-4' => '4',
-				'grid-5' => '5',
-			),
-			'allow_null' => 0,
-			'other_choice' => 0,
-			'save_other_choice' => 0,
-			'default_value' => '',
-			'layout' => 'horizontal',
-			'return_format' => 'value',
-		),
-		array(
 			'key' => 'field_5b336a7b4f2c3',
 			'label' => 'Type',
 			'name' => 'hc_slider',

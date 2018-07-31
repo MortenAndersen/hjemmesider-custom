@@ -1,4 +1,3 @@
 * README github
-* gitignore
-* sass compiler -> plugin-min.css
-* js compiler -> plugin-min.js
+* Ikoner til personer
+* personer - read more as slide up/down
