@@ -1,3 +1,4 @@
 * README github
 * Ikoner til personer
 * personer - read more as slide up/down
+* Antal på shortkode
