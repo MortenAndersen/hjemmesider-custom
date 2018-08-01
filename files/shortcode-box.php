@@ -7,19 +7,21 @@ function hjemmeisder_custom_box($atts) {
     ob_start();
 
     // define attributes and their defaults
-    extract(shortcode_atts(array('grid' => 'grid-2'), $atts));
+    extract(shortcode_atts(array('grid' => 'grid-2', 'antal' => 999, 'type' => 'default'), $atts));
 
 // var
     $box_type = get_field('hc_slider');
 
 if( have_rows('box') ):
 
-if( $box_type == 'none' ) { echo '<div class="hc-box-con hc-grid-con ' . $grid . '">'; };
-if( $box_type == 'fader' ) { echo '<div class="hc-box-con hc-grid-con hc-fader">'; };
+if( $type == 'default' ) { echo '<div class="hc-box-con hc-grid-con ' . $grid . '">'; };
+if( $type == 'fader' ) { echo '<div class="hc-box-con hc-grid-con hc-fader">'; };
 
 echo "\n";
- 	// loop through the rows of data
-    while ( have_rows('box') ) : the_row();
+
+$i = 1;
+
+    while ( have_rows('box') && $i <= $antal ) : the_row();
 
     	if( get_sub_field('text_color') && get_sub_field('background') ):
 echo '<div class="hc-box-item hc-grid-item box-' . get_row_index() . ' ' . get_sub_field('design') . '" style="color:' . get_sub_field('text_color') . ';' . 'background:' . get_sub_field('background') . '">';
@@ -46,6 +48,7 @@ else :
 
 echo "</div>\n";
 echo "\n";
+$i++;
     endwhile;
 echo '</div>';
 echo "\n";

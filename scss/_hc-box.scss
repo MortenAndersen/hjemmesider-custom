@@ -8,7 +8,11 @@
     text-align: left;
     overflow: hidden;
     width: 100%;
+    .hc-fader & {
+        margin: 0;
+    }
 }
+
 
 p.hc-image-caption {
     margin: .5em 0;
