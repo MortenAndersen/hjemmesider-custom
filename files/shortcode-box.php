@@ -7,7 +7,7 @@ function hjemmeisder_custom_box($atts) {
     ob_start();
 
     // define attributes and their defaults
-    extract(shortcode_atts(array('grid' => 'grid-2', 'antal' => 999, 'type' => 'default'), $atts));
+    extract(shortcode_atts(array('grid' => 'grid-2', 'number' => 999, 'type' => 'default'), $atts));
 
 // var
     $box_type = get_field('hc_slider');
@@ -21,7 +21,7 @@ echo "\n";
 
 $i = 1;
 
-    while ( have_rows('box') && $i <= $antal ) : the_row();
+    while ( have_rows('box') && $i <= $number ) : the_row();
 
     	if( get_sub_field('text_color') && get_sub_field('background') ):
 echo '<div class="hc-box-item hc-grid-item box-' . get_row_index() . ' ' . get_sub_field('design') . '" style="color:' . get_sub_field('text_color') . ';' . 'background:' . get_sub_field('background') . '">';

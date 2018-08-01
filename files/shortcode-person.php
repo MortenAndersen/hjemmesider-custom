@@ -1,7 +1,7 @@
 <?php
 // Personer Shortcode
 
-add_shortcode('personer', 'hjemmesider_personer');
+add_shortcode('person', 'hjemmesider_personer');
 function hjemmesider_personer($atts) {
     global $post;
     ob_start();

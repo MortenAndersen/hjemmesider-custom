@@ -1,7 +1,7 @@
 <?php
 // Billedgalleri
 
-add_shortcode('billedgalleri', 'hjemmesider_custom_galleri');
+add_shortcode('gallery', 'hjemmesider_custom_galleri');
 function hjemmesider_custom_galleri($atts) {
     global $post;
     ob_start();

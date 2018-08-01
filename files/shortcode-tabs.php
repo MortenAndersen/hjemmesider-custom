@@ -1,7 +1,7 @@
 <?php
 // Accordion
 
-add_shortcode('tabs', 'hjemmesider_custom_tabs');
+add_shortcode('tab', 'hjemmesider_custom_tabs');
 function hjemmesider_custom_tabs($atts) {
     global $post;
     ob_start();

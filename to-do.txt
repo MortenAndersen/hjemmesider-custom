@@ -1,4 +1,4 @@
-* README github
+* README github ... skal gøres færdig
 * Ikoner til personer
 * personer - read more as slide up/down
-* Antal på shortkode
+* Antal skal ændre til 'number'
