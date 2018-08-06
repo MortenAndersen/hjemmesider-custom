@@ -2,14 +2,17 @@
 **WP ACF plugin**
 
 *GRID:*
-grid-1, grid-2, grid-3, grid-4, grid-5
+grid-1, grid-2, grid-3, grid-4, grid-5, grid-36
+
+GRID ITEM PADDING (padding = xem)
+gp0, gp1, gp2, gp3
 
 *IMAGE SIZE:*
 thumbnail, medium, large, full
 
 **BOX:**
 
-[hc-box], [hc-box grid=grid-2], [hc-box type=fader], [hc-box number=3]
+[hc-box], [hc-box grid=grid-2], [hc-box type=fader], [hc-box number=3], [hc-box gp=gp2]
 
 **GALLERY:**
 

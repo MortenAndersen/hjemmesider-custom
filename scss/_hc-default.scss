@@ -59,6 +59,27 @@ body {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
+    &.gp0 {
+        .hc-grid-item {
+            padding: 0;
+            background: none;
+        }
+    }
+    &.gp1 {
+        .hc-grid-item {
+            padding: 1em;
+        }
+    }
+    &.gp2 {
+        .hc-grid-item {
+            padding: 2em;
+        }
+    }
+    &.gp3 {
+        .hc-grid-item {
+            padding: 3em;
+        }
+    }
 }
 
 .hc-grid-item {
@@ -93,21 +114,25 @@ body {
         margin-left: 1em;
     }
 
-    .hc-grid-con.grid-3 .hc-grid-item {
+    .hc-grid-con.grid-3 .hc-grid-item,
+    .hc-grid-con.grid-36 .hc-grid-item {
         flex: 1 30%;
         max-width: calc((100% / 3) - (4em / 3));
     }
-    .hc-grid-con.grid-3 .hc-grid-item:nth-child(3n+2) {
+    .hc-grid-con.grid-3 .hc-grid-item:nth-child(3n+2),
+    .hc-grid-con.grid-36 .hc-grid-item:nth-child(3n+2) {
         margin-left: 2em;
         margin-right: 2em;
     }
 
-    .hc-grid-con.grid-4 .hc-grid-item {
+    .hc-grid-con.grid-4 .hc-grid-item,
+    .hc-grid-con.grid-48 .hc-grid-item {
         flex: 1 25%;
         max-width: calc(25% - (6em / 4));
         margin-left: 2em;
     }
-    .hc-grid-con.grid-4 .hc-grid-item:nth-child(4n+1) {
+    .hc-grid-con.grid-4 .hc-grid-item:nth-child(4n+1),
+    .hc-grid-con.grid-48 .hc-grid-item:nth-child(4n+1) {
         margin-left: 0;
     }
 
@@ -119,4 +144,31 @@ body {
     .hc-grid-con.grid-5 .hc-grid-item:nth-child(5n+1) {
         margin-left: 0;
     }
+}
+
+@media (min-width: 1024px) {
+    .hc-grid-con.grid-36 .hc-grid-item {
+        flex: 1 16.67%;
+        max-width: calc((100% / 6) - (10em / 6));
+        margin-left: 2em;
+    }
+    .hc-grid-con.grid-36 .hc-grid-item:nth-child(6n+1) {
+        margin-left: 0;
+    }
+    .hc-grid-con.grid-36 .hc-grid-item:nth-child(3n+2) {
+        margin-right: 0;
+    }
+
+    .hc-grid-con.grid-48 .hc-grid-item {
+        flex: 1 12.5%;
+        max-width: calc((100% / 8) - (14em / 8));
+        margin-left: 2em;
+    }
+    .hc-grid-con.grid-48 .hc-grid-item:nth-child(4n+1) {
+        margin-left: 2em;
+    }
+    .hc-grid-con.grid-48 .hc-grid-item:nth-child(8n+1) {
+        margin-left: 0;
+    }
+
 }

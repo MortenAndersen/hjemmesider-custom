@@ -3,13 +3,13 @@
 .hc-box-item {
     background: rgba(0, 0, 0, .1);
     margin: 1em 0;
-    padding: 2em;
     list-style-type: none;
     text-align: left;
     overflow: hidden;
     width: 100%;
     .hc-fader & {
         margin: 0;
+        background: inherit;
     }
 }
 

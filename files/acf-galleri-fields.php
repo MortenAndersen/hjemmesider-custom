@@ -3,11 +3,11 @@ if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
 	'key' => 'group_5b570d0c155bb',
-	'title' => 'Galleri',
+	'title' => 'GALLERY hc',
 	'fields' => array(
 		array(
 			'key' => 'field_5b570d244f431',
-			'label' => 'Billedgalleri',
+			'label' => 'Images',
 			'name' => 'hc_billedgalleri',
 			'type' => 'gallery',
 			'instructions' => '',

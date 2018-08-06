@@ -33,7 +33,7 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5b30bcc054959',
-			'label' => 'Box',
+			'label' => 'Boxes',
 			'name' => 'box',
 			'type' => 'repeater',
 			'instructions' => '',

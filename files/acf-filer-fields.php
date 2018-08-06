@@ -4,11 +4,11 @@ if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
 	'key' => 'group_5b3a228e6d069',
-	'title' => 'FILER hc',
+	'title' => 'FILES hc',
 	'fields' => array(
 		array(
 			'key' => 'field_5b3a2298b3977',
-			'label' => 'Filer',
+			'label' => 'Files',
 			'name' => 'hc_filer_item',
 			'type' => 'repeater',
 			'instructions' => '',
