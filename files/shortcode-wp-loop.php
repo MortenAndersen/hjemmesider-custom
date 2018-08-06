@@ -9,7 +9,7 @@
 // Design none / clean / normal - design=clean
 
 
-add_shortcode('loop', 'hjemmesider_custom_loop');
+add_shortcode('hc-loop', 'hjemmesider_custom_loop');
 function hjemmesider_custom_loop($atts) {
     global $post;
     ob_start();

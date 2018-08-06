@@ -1,7 +1,7 @@
 <?php
 // Accordion
 
-add_shortcode('accordion', 'hjemmesider_custom_accordion');
+add_shortcode('hc-accordion', 'hjemmesider_custom_accordion');
 function hjemmesider_custom_accordion($atts) {
     global $post;
     ob_start();

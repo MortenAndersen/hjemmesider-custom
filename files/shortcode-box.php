@@ -1,7 +1,7 @@
 <?php
 // News frontpage Shortcode
 
-add_shortcode('box', 'hjemmeisder_custom_box');
+add_shortcode('hc-box', 'hjemmeisder_custom_box');
 function hjemmeisder_custom_box($atts) {
     global $post;
     ob_start();

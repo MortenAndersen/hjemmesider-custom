@@ -1,7 +1,7 @@
 <?php
 // Accordion
 
-add_shortcode('file', 'hjemmesider_custom_filer');
+add_shortcode('hc-file', 'hjemmesider_custom_filer');
 function hjemmesider_custom_filer($atts) {
     global $post;
     ob_start();

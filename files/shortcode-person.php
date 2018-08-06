@@ -1,7 +1,7 @@
 <?php
 // Personer Shortcode
 
-add_shortcode('person', 'hjemmesider_personer');
+add_shortcode('hc-person', 'hjemmesider_personer');
 function hjemmesider_personer($atts) {
     global $post;
     ob_start();
@@ -33,13 +33,13 @@ the_post_thumbnail('medium'); echo "\n"; ?>
 <?php if( get_field('hc_titel') || get_field('hc_telefon') || get_field('hc_email') ): ?>
 <div class="person-data">
 <?php if( get_field('hc_titel') ): ?><div class="data-titel"><?php the_field('hc_titel'); ?></div><?php endif; ?>
-<?php if( get_field('hc_telefon') ): ?><div class="data-telefon"><?php the_field('hc_telefon'); ?></div><?php endif; ?>
-<?php if( get_field('hc_email') ): ?><div class="data-email"><a href="mailto:<?php the_field('hc_email'); ?>"><?php the_field('hc_email'); ?></a></div><?php endif; ?>
+<?php if( get_field('hc_telefon') ): ?><div class="data-telefon"><img class="hc-icon hc-phone" src="<?php echo $url = plugins_url(); ?>/hjemmesider-custom/img/phone.svg" alt="phone" /><?php the_field('hc_telefon'); ?></div><?php endif; ?>
+<?php if( get_field('hc_email') ): ?><div class="data-email"><img class="hc-icon hc-mail" src="<?php echo $url = plugins_url(); ?>/hjemmesider-custom/img/mail.svg" alt="mail" /><a href="mailto:<?php the_field('hc_email'); ?>"><?php the_field('hc_email'); ?></a></div><?php endif; ?>
 
    <?php if( get_field('hc_linkedin') || get_field('hc_skypename') ) { ?>
   <div class="person-social">
     <?php if( get_field('hc_linkedin') ): ?><span class="person-data-social data-linkedin"><a href="<?php the_field('hc_linkedin'); ?>" target="_blank">Linkedin</a></span><?php endif; ?>
-  <?php if( get_field('hc_skypename') ): ?><span class="person-data-social data-skype"><a href="skype:<?php the_field('hc_skypename'); ?>?call">Skype</a></span><?php endif; ?>
+  <?php if( get_field('hc_skypename') ): ?><span class="person-data-social data-skype"><a href="skype:<?php the_field('hc_skypename'); ?>?call"><img class="hc-icon hc-skype" src="<?php echo $url = plugins_url(); ?>/hjemmesider-custom/img/skype.png" alt="Skype" />Skype</a></span><?php endif; ?>
   </div>
   <?php } ?>
 </div>
@@ -48,7 +48,6 @@ the_post_thumbnail('medium'); echo "\n"; ?>
 
 <?php
     the_content(); ?>
-    <?php edit_post_link('<span>Rediger</span> PERSON', '<p class="edit__content">', '</p>'); ?>
 </div>
 
 <?php

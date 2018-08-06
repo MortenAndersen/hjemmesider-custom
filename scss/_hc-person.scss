@@ -5,4 +5,14 @@
 }
 .person-data {
 	padding: .5em 0;
+	a {
+		text-decoration: none;
+		box-shadow: none;
+	}
+}
+.hc-mail {
+    top: 5px;
+}
+.hc-skype {
+    top: 3px;
 }
