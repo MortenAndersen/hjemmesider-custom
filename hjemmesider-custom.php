@@ -55,4 +55,4 @@ require_once ('files/shortcode-person.php');
 
 // EVENTS
 // require_once ('files/shortcode-event.php');
-require_once ('files/posttype-event.php');
+// require_once ('files/posttype-event.php');

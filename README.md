@@ -31,4 +31,4 @@ thumbnail, medium, large, full
 
 **LOOP**
 
-[hc-loop], og flere :-)
+[hc-loop], [hc-loop number=2], [hc-loop design=clean / normal], [hc-loop cat=5], [hc-loop order=asc / desc], [hc-loop type=pages]
