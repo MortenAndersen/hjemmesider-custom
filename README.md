@@ -2,7 +2,7 @@
 **WP ACF plugin**
 
 *GRID:*
-grid-1, grid-2, grid-3, grid-4, grid-5, grid-36
+grid-1, grid-2, grid-3, grid-4, grid-5, grid-36, grid-48
 
 GRID ITEM PADDING (padding = xem)
 gp0, gp1, gp2, gp3
@@ -35,3 +35,7 @@ thumbnail, medium, large, full
 **LOOP**
 
 [hc-loop], [hc-loop number=2], [hc-loop design=clean / normal], [hc-loop cat=5], [hc-loop order=asc / desc], [hc-loop type=pages]
+
+**EVENT**
+
+[hc-event], [hc-event type=old], [hc-event number=3]

@@ -25,34 +25,56 @@ function hc_scripts() {
 add_action('wp_enqueue_scripts', 'hc_scripts');
 
 
+// OPTION PAGE
+require_once ('files/option-page.php');
+
+// vars from OPTION PAGE
+$hc_custom_options = get_field('hc_custom_options', 'option');
+
 // BOX
+if( $hc_custom_options && in_array('Box', $hc_custom_options) ) {
 require_once ('files/acf-box-fields.php');
 require_once ('files/shortcode-box.php');
+};
 
 // ACCORDION
+if( $hc_custom_options && in_array('Accordion', $hc_custom_options) ) {
 require_once ('files/acf-accordion-fields.php');
 require_once ('files/shortcode-accordion.php');
+};
 
 // TABS
+if( $hc_custom_options && in_array('Tab', $hc_custom_options) ) {
 require_once ('files/acf-tabs-fields.php');
 require_once ('files/shortcode-tabs.php');
+};
 
 // FILER
+if( $hc_custom_options && in_array('File', $hc_custom_options) ) {
 require_once ('files/acf-filer-fields.php');
 require_once ('files/shortcode-filer.php');
+};
 
 // BILLEDGALLERI
+if( $hc_custom_options && in_array('Gallery', $hc_custom_options) ) {
 require_once ('files/acf-galleri-fields.php');
 require_once ('files/shortcode-galleri.php');
+};
 
 // WP LOOP
+if( $hc_custom_options && in_array('Loop', $hc_custom_options) ) {
 require_once ('files/shortcode-wp-loop.php');
+};
 
 // PERSON
+if( $hc_custom_options && in_array('Person', $hc_custom_options) ) {
 require_once ('files/posttype-person.php');
 require_once ('files/acf-person-fields.php');
 require_once ('files/shortcode-person.php');
+};
 
 // EVENTS
-// require_once ('files/shortcode-event.php');
-// require_once ('files/posttype-event.php');
+if( $hc_custom_options && in_array('Event', $hc_custom_options) ) {
+require_once ('files/shortcode-event.php');
+require_once ('files/posttype-event.php');
+};

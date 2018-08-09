@@ -1,4 +1,5 @@
-* README github ... skal gøres færdig
-* Ikoner til personer
-* personer - read more as slide up/down
-* Antal skal ændre til 'number'
+* EVENTS
+acf skal flyttes til fil
+dato og tid skal spilttes op
+validering af start og slut dato skal flyttes til ACF filen
+sortering på kategorier
